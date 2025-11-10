@@ -916,20 +916,7 @@
             "linkedinUrl": "www.linkedin.com/in/radha-g-9489b8264",
             "instagramUrl": "https://www.instagram.com/radhagoel16/"
         },
-        {
-            "name": "Nishant Giri",
-            "rank": "Synergy Coordinator",
-            "imgUrl": "assets/images/StudentCouncil/11.0/nishant.png",
-            "linkedinUrl": "https://www.linkedin.com/in/nishant-giri-2083a2309",
-            "instagramUrl": "https://www.instagram.com/ofc_ng75"
-        },
-        {
-            "name": "Harsh Kushwaha",
-            "rank": "Web Development & IT",
-            "imgUrl": "assets/images/StudentCouncil/11.0/harshkushwaha.png",
-            "linkedinUrl": "https://www.linkedin.com/in/harsh-kushwaha-3b2829291",
-            "instagramUrl": "https://www.instagram.com/the_man_underthe_hood"
-        },
+
         {
             "name": "Aman Chandra",
             "rank": "Team Media & Publicity",
@@ -946,7 +933,7 @@
         },
         {
             "name": "Harshit Jaipuria",
-            "rank": "Team Media & Publicity",
+            "rank": "Team Networking",
             "imgUrl": "assets/images/StudentCouncil/11.0/harshit.png",
             "linkedinUrl":"https://www.linkedin.com/in/harshit-jaipuria/" ,
             "instagramUrl": "https://www.instagram.com/harshit_jaipuria/"
