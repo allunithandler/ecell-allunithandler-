@@ -35,7 +35,7 @@ export const Navbar = () => {
                         <li><HashLink to="/#team" className="nav-link scrollto">Team</HashLink></li>
                         <li><HashLink to="/#mentor" className="nav-link scrollto">Mentors</HashLink></li>
                         <li><HashLink to="/#contact" className="nav-link scrollto">Contact</HashLink></li>
-                        <a href="https://tedxglau.com" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: "#E62B1E", color: "black", fontWeight: "bold", padding: "5px 10px", borderRadius: "5px", textDecoration: "none", transition: "background-color 0.3s", marginLeft: "25px" }} onMouseEnter={(e) => e.target.style.backgroundColor = "#D9241A"} onMouseLeave={(e) => e.target.style.backgroundColor = "#E62B1E"}>TEDxGLAU</a>
+                        <a href="https://forms.gle/kEtp9vN4xUy7YUxy8" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: "#E62B1E", color: "black", fontWeight: "bold", padding: "5px 10px", borderRadius: "5px", textDecoration: "none", transition: "background-color 0.3s", marginLeft: "25px" }} onMouseEnter={(e) => e.target.style.backgroundColor = "#D9241A"} onMouseLeave={(e) => e.target.style.backgroundColor = "#E62B1E"}>TEDxGLAU</a>
 
 
 
