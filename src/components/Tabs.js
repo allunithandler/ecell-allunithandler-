@@ -2,31 +2,37 @@ import { useEffect } from "react";
 
 export const Tabs = () => {
     useEffect(() => {
-        let navLink = document.querySelectorAll('.nav-link');
-        let tabPane = document.querySelectorAll('.tab-pane');
+        const cleanup = () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                const newLink = link.cloneNode(true);
+                link.parentNode.replaceChild(newLink, link);
+            });
+        };
 
-        navLink.forEach((link, index) => {
-            link.addEventListener('click', () => {
-                navLink.forEach((nav, index) => {
-                    nav.classList.remove('active');
-                    nav.classList.remove('show');
-                });
-                link.classList.add('active');
-                link.classList.add('show');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const tabPanes = document.querySelectorAll('.tab-pane');
 
-                let getTargetTab = link.getAttribute('data-bs-target');
-                tabPane.forEach((tab, index) => {
-                    tab.classList.remove('active');
-                    tab.classList.remove('show');
-                    if (tab.id === getTargetTab) {
-                        tab.classList.add('active');
-                        tab.classList.add('show');
-                    }
-                });
+        const handleClick = (link) => {
+            navLinks.forEach(nav => {
+                nav.classList.remove('active', 'show');
+            });
+            link.classList.add('active', 'show');
 
-            })
-        })
+            const targetTab = link.getAttribute('data-bs-target');
+            tabPanes.forEach(tab => {
+                tab.classList.remove('active', 'show');
+                if (tab.id === targetTab) {
+                    tab.classList.add('active', 'show');
+                }
+            });
+        };
 
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => handleClick(link));
+        });
+
+        return cleanup;
     }, [])
 
 

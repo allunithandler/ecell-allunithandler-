@@ -12,8 +12,12 @@ export const TeamCouncil = () => {
     const [councilText, setCouncilText] = useState("Meet E-Cell 1.0");
     useEffect(() => {
         document.body.style.backgroundImage = "none";
-        document.getElementById("header").style.top = "0%"; 
-        document.getElementById("footer").style.display = "block"; 
+        
+        const header = document.getElementById("header");
+        const footer = document.getElementById("footer");
+        
+        if (header) header.style.top = "0%";
+        if (footer) footer.style.display = "block";
         
         const hash = window.location.hash;
         if (hash) {
@@ -22,7 +26,6 @@ export const TeamCouncil = () => {
                 setActiveSlider(splitHash[1]);
                 setCouncilText(`Meet E-Cell ${splitHash[1]}.0`)
             }
-
         }
     }, [])
     const changeTeam = (team) => {
@@ -124,17 +127,18 @@ export const TeamCouncil = () => {
                                 {/* { */}
                                 <div className="row">
                                     {data &&
+                                        data[`${activeSlider}.0`] &&
                                         data[`${activeSlider}.0`].map((member, index) => {
                                             return (
-                                                <SwiperSlide className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
+                                                <SwiperSlide key={index} className="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center">
                                                     <div className="member" data-aos="fade-up" data-aos-delay="100">
                                                         <div className="member-img">
-                                                            <img src={member.imgUrl} className="img-fluid" alt="" />
+                                                            <img src={member.imgUrl} className="img-fluid" alt={member.name} />
                                                             <div className="social">
-                                                                <a href={member.linkedinUrl} target="blank"><i className="bi bi-linkedin"></i></a>
+                                                                <a href={member.linkedinUrl} target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
                                                                 {
                                                                     member.instagramUrl &&
-                                                                    <a href={member.instagramUrl} target="blank"><i className="bi bi-instagram"></i></a>
+                                                                    <a href={member.instagramUrl} target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i></a>
                                                                 }
                                                             </div>
                                                         </div>
@@ -145,7 +149,7 @@ export const TeamCouncil = () => {
                                                     </div>
                                                 </SwiperSlide>
                                             )
-                                        })}
+                                        })}}
                                 </div>
 
                             </Swiper>

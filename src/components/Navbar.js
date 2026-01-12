@@ -23,7 +23,7 @@ export const Navbar = () => {
                     <HashLink to="/#mentor" className="nav-item">Mentors</HashLink>
                     <HashLink to="/#contact" className="nav-item">Contact</HashLink>
                 </nav>
-                <a href="http://localhost:3000/#testimonials" className="navbar-signin">Sign In</a>
+                <a href="https://dashboard-glauecell.netlify.app/" target="_blank" rel="noreferrer" className="navbar-signin">Sign In</a>
                 <input onClick={handleNavbar} type="checkbox" className="navbar-toggle" aria-label="Menu"></input>
             </div>
         </header>
