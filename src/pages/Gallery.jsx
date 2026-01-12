@@ -40,11 +40,11 @@ export const Gallery = () => {
                 <div className="container" style={{ marginTop: "100px" }}>
 
                     <div className="row1">
-                        {Array.from({ length: 12 }, (_, index) => (
+                        {Array.from({ length: 251 }, (_, index) => (
                             <div className="column" key={index}>
                                 <div className="gal_item">
                                     <div className="overlay-gall" onClick={showFullImg}></div>
-                                    < img src={`assets/images/gallery/${index + 1}.JPG`} alt="" />
+                                    <img src={`assets/images/gallery/${index + 1}.JPG`} alt={`Gallery ${index + 1}`} />
                                 </div>
                             </div>
                         ))}

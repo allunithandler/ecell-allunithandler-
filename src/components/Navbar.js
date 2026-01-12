@@ -1,25 +1,38 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import { HashLink } from "react-router-hash-link";
 
 export const Navbar = () => {
     const ref = useRef(null);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    
     const handleNavbar = () => {
         ref.current.classList.toggle('active');
     };
+    
     return (
         <header className="navbar-fintech fixed-top">
             <div className="navbar-container">
                 <div className="navbar-logo">
-                    <img src="assets/images/E-Cell_New_Logo.png" alt="E-Cell" />
+                    <HashLink to="/">
+                        <img src="assets/images/E-Cell_New_Logo.png" alt="E-Cell" />
+                    </HashLink>
                 </div>
                 <nav className="navbar-menu" ref={ref}>
-                    <HashLink to="/#hero" className="nav-item active">Home</HashLink>
                     <HashLink to="/#partners" className="nav-item">Partners</HashLink>
                     <HashLink to="/#about" className="nav-item">About</HashLink>
-                    <HashLink to="/#genie" className="nav-item">Genie</HashLink>
+                    <div className="nav-dropdown" 
+                         onMouseEnter={() => setDropdownOpen(true)}
+                         onMouseLeave={() => setDropdownOpen(false)}>
+                        <span className="nav-item">Team ▼</span>
+                        {dropdownOpen && (
+                            <div className="dropdown-content">
+                                <HashLink to="/councils" className="dropdown-link">Team Council</HashLink>
+                                <HashLink to="/#genie" className="dropdown-link">Genie</HashLink>
+                            </div>
+                        )}
+                    </div>
                     <HashLink to="/#gallery" className="nav-item">Gallery</HashLink>
                     <HashLink to="/#testimonials" className="nav-item">Startups</HashLink>
-                    <HashLink to="/#team" className="nav-item">Team</HashLink>
                     <HashLink to="/#mentor" className="nav-item">Mentors</HashLink>
                     <HashLink to="/#contact" className="nav-item">Contact</HashLink>
                 </nav>
