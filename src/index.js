@@ -40,7 +40,12 @@ const router = createBrowserRouter([
     ],
     // errorElement: <NotFound />
   },
-]);
+], {
+  future: {
+    v7_startTransition: true,
+    v7_relativeSplatPath: true
+  }
+});
 
 const Root = () => {
   const [loading, setLoading] = useState(true);

@@ -24,7 +24,7 @@ export const Testimonials = () => {
                     <SwiperSlide >
                         <div className="testimonial-wrap">
                             <div className="testimonial-item">
-                                <img src="assets/images/Logo/tred e-01.png" className="testimonial-img" alt="" />
+                                <img src="assets/images/logoorange.png" className="testimonial-img" alt="Tredmolen E-Cycle" />
                                 <h3>Tredmolen E-Cycle Pvt. Ltd</h3>
                                 <h4>Mr.Sachin Singh Sengar</h4>
                                 <p>
@@ -42,7 +42,7 @@ export const Testimonials = () => {
                     <SwiperSlide >
                         <div className="testimonial-wrap">
                             <div className="testimonial-item">
-                                <img src="assets/images/Logo/Logo of Meri Kitaab .in-01.jpg" className="testimonial-img" alt="" />
+                                <img src="assets/images/logoorange.png" className="testimonial-img" alt="Meri Kitaab" />
                                 <h3>Meri Kitaab Pvt. Ltd.</h3>
                                 <h4>Mr.Shiv Kumar Sharma</h4>
                                 <p>
@@ -60,7 +60,7 @@ export const Testimonials = () => {
                     <SwiperSlide >
                         <div className="testimonial-wrap">
                             <div className="testimonial-item">
-                                <img src="assets/images/Logo//heptism-01.png" className="testimonial-img" alt="" />
+                                <img src="assets/images/logoorange.png" className="testimonial-img" alt="Heptism" />
                                 <h3>Heptism</h3>
                                 <h4>Mr.Atul Maurya</h4>
                                 <p>
@@ -77,7 +77,7 @@ export const Testimonials = () => {
                     <SwiperSlide >
                         <div className="testimonial-wrap">
                             <div className="testimonial-item">
-                                <img src="assets/images/Logo/Logo of Blunux-01.jpg" className="testimonial-img" alt="" />
+                                <img src="assets/images/logoorange.png" className="testimonial-img" alt="BluNux" />
                                 <h3>BluNux</h3>
                                 <h4>Mr.Naman Bhatnagar</h4>
                                 <p>
@@ -95,7 +95,7 @@ export const Testimonials = () => {
                     <SwiperSlide >
                         <div className="testimonial-wrap">
                             <div className="testimonial-item">
-                                <img src="assets/images/Logo/Logo of The Vilg-01.png" className="testimonial-img" alt="" />
+                                <img src="assets/images/logoorange.png" className="testimonial-img" alt="The Vilg" />
                                 <h3>The Vilg</h3>
                                 <h4>Mr.Anindya Singh</h4>
                                 <p>
@@ -111,7 +111,7 @@ export const Testimonials = () => {
                     <SwiperSlide >
                         <div className="testimonial-wrap">
                             <div className="testimonial-item">
-                                <img src="assets/images/Logo/legal-01-01.jpg" className="testimonial-img" alt="" />
+                                <img src="assets/images/logoorange.png" className="testimonial-img" alt="Legal24by7" />
                                 <h3>Legal24by7</h3>
                                 <h4>Mr.Prince Agrawal</h4>
                                 <p>
@@ -128,7 +128,7 @@ export const Testimonials = () => {
                     <SwiperSlide >
                         <div className="testimonial-wrap">
                             <div className="testimonial-item">
-                                <img src="assets/images/Logo/tourtown-01-01.png" className="testimonial-img" alt="" />
+                                <img src="assets/images/logoorange.png" className="testimonial-img" alt="TourInTown" />
                                 <h3>TourInTown</h3>
                                 <h4>Mr.Neetesh Pandey</h4>
                                 <p>
@@ -143,7 +143,7 @@ export const Testimonials = () => {
                     <SwiperSlide >
                         <div className="testimonial-wrap">
                             <div className="testimonial-item">
-                                <img src="assets/images/Logo/foodwagon-01.png" className="testimonial-img" alt="" />
+                                <img src="assets/images/logoorange.png" className="testimonial-img" alt="FoodWagon" />
                                 <h3>FoodWagon</h3>
                                 <h4>Mr.Rajdeep Gautam </h4>
                                 <p>
@@ -159,7 +159,7 @@ export const Testimonials = () => {
                     <SwiperSlide >
                         <div className="testimonial-wrap">
                             <div className="testimonial-item">
-                                <img src="assets/images/Logo/Logo of Codven Solutions Pvt. Ltd.-01.jpg" className="testimonial-img" alt="" />
+                                <img src="assets/images/logoorange.png" className="testimonial-img" alt="Codven Solutions" />
                                 <h3>Codven Solutions Pvt. Ltd.</h3>
                                 <h4>Mr.Arpit Kumar Garg</h4>
                                 <p>
@@ -176,7 +176,7 @@ export const Testimonials = () => {
                     <SwiperSlide >
                         <div className="testimonial-wrap">
                             <div className="testimonial-item">
-                                <img src="assets/images/Logo/cd-01-01.jpg" className="testimonial-img" alt="" />
+                                <img src="assets/images/logoorange.png" className="testimonial-img" alt="Coding Dev" />
                                 <h3>Coding Dev</h3>
                                 <h4>Mr.Rahul Dev Garg</h4>
                                 <p>
@@ -192,7 +192,7 @@ export const Testimonials = () => {
                     <SwiperSlide >
                         <div className="testimonial-wrap">
                             <div className="testimonial-item">
-                                <img src="assets/images/Logo/Logo of Ebibil-01.jpg" className="testimonial-img" alt="" />
+                                <img src="assets/images/logoorange.png" className="testimonial-img" alt="Ebibil Media" />
                                 <h3>Ebibil Media Pvt.Ltd</h3>
                                 <h4>Mr.Anindya Singh</h4>
                                 <p>
