@@ -1,5 +1,4 @@
 import { useRef } from "react"
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export const Navbar = () => {
@@ -8,43 +7,25 @@ export const Navbar = () => {
         ref.current.classList.toggle('active');
     };
     return (
-        <header id="header" className="fixed-top d-flex align-items-center">
-            <div className="container d-flex align-items-center relative">
-                <h1 className="logo me-auto"><img src="assets/images/E-Cell_New_Logo.png" alt="img" /></h1>
-                {/* <!-- <a href="index.html" className="logo me-auto"><img src="assets/img/logo.png" alt=""></a>--> */}
-
-                <nav id="navbar" ref={ref} className="navbar order-last order-lg-0 py-0">
-                    <ul>
-                        {/* <li><Link to={'/'} className="nav-link scrollto active" href="#hero">Home</Link></li>
-                        <li><HashLink to="/#partners" className="nav-link scrollto active">Part</HashLink></li>
-                        <li><a className="nav-link scrollto" href="#partners">Partners</a></li>
-                        <li><a className="nav-link scrollto" href="#about">About</a></li>
-                        <li><a className="nav-link scrollto" href="#genie">Genie</a></li>
-                        <li><a className="nav-link scrollto " href="#gallery">Gallery</a></li>
-                        <li><a className="nav-link scrollto " href="#testimonials">StartUps</a></li>
-                        <li><a className="nav-link scrollto" href="#team">Team</a></li>
-                        <li><a className="nav-link scrollto" href="#mentor">Mentors</a></li>
-                        <li><a className="nav-link scrollto" href="#contact">Contact</a></li> */}
-                        {/* <Link to={'/events'} className="get-started-btn scrollto "><span style={{ marginRight: "25px" }}>E-Summit'24</span></Link> */}
-                        <li><HashLink to="/#hero" className="nav-link scrollto active">Home</HashLink></li>
-                        <li><HashLink to="/#partners" className="nav-link scrollto">Partners</HashLink></li>
-                        <li><HashLink to="/#about" className="nav-link scrollto">About</HashLink></li>
-                        <li><HashLink to="/#genie" className="nav-link scrollto">Genie</HashLink></li>
-                        <li><HashLink to="/#gallery" className="nav-link scrollto">Gallery</HashLink></li>
-                        <li><HashLink to="/#testimonials" className="nav-link scrollto">StartUps</HashLink></li>
-                        <li><HashLink to="/#team" className="nav-link scrollto">Team</HashLink></li>
-                        <li><HashLink to="/#mentor" className="nav-link scrollto">Mentors</HashLink></li>
-                        <li><HashLink to="/#contact" className="nav-link scrollto">Contact</HashLink></li>
-                        <a href="https://forms.gle/kEtp9vN4xUy7YUxy8" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: "#E62B1E", color: "black", fontWeight: "bold", padding: "5px 10px", borderRadius: "5px", textDecoration: "none", transition: "background-color 0.3s", marginLeft: "25px" }} onMouseEnter={(e) => e.target.style.backgroundColor = "#D9241A"} onMouseLeave={(e) => e.target.style.backgroundColor = "#E62B1E"}>TEDxGLAU</a>
-
-
-
-                    </ul>
+        <header className="navbar-fintech fixed-top">
+            <div className="navbar-container">
+                <div className="navbar-logo">
+                    <img src="assets/images/E-Cell_New_Logo.png" alt="E-Cell" />
+                </div>
+                <nav className="navbar-menu" ref={ref}>
+                    <HashLink to="/#hero" className="nav-item active">Home</HashLink>
+                    <HashLink to="/#partners" className="nav-item">Partners</HashLink>
+                    <HashLink to="/#about" className="nav-item">About</HashLink>
+                    <HashLink to="/#genie" className="nav-item">Genie</HashLink>
+                    <HashLink to="/#gallery" className="nav-item">Gallery</HashLink>
+                    <HashLink to="/#testimonials" className="nav-item">Startups</HashLink>
+                    <HashLink to="/#team" className="nav-item">Team</HashLink>
+                    <HashLink to="/#mentor" className="nav-item">Mentors</HashLink>
+                    <HashLink to="/#contact" className="nav-item">Contact</HashLink>
                 </nav>
-                    <input onClick={handleNavbar} type="checkbox" role="button" aria-label="Display the menu" className="menu"></input>
-
+                <a href="http://localhost:3000/#testimonials" className="navbar-signin">Sign In</a>
+                <input onClick={handleNavbar} type="checkbox" className="navbar-toggle" aria-label="Menu"></input>
             </div>
         </header>
     )
-
 }

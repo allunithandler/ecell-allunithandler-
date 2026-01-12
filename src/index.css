@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sign-in-btn {
+  animation: slideInDown 0.5s ease-out;
+}
+
+@media (max-width: 768px) {
+  .sign-in-btn {
+    padding: 6px 15px !important;
+    font-size: 14px;
+    margin-left: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .sign-in-btn {
+    padding: 5px 12px !important;
+    font-size: 12px;
+    margin-left: 5px !important;
+  }
+}

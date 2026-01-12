@@ -16,9 +16,6 @@ import { useEffect } from 'react';
 export const Home = () =>{
   useEffect(() => {
     document.body.style.backgroundImage = "none";
-    
-    document.getElementById("header").style.top = "0%"; 
-    document.getElementById("footer").style.display = "block"; 
   }, [])
   
   return (
