@@ -15,7 +15,7 @@ export const Contacts = () => {
               <div className="col-md-12">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.607731193856!2d77.59113581501313!3d27.60568868283421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sin!4v1646131620621!5m2!1sen!2sin"
-                  width="550" height="500" style={{border:"0"}} allowFullScreen loading="lazy"></iframe>
+                  width="550" height="500" style={{border:"0"}} allowFullScreen loading="lazy" title="GLA University Location"></iframe>
 
                 <div className="info-box">
                   <i className="bx bx-map" style={{position:"absolute",left:"46%",top:"35%"}}></i>

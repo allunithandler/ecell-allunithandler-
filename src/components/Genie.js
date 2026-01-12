@@ -20,7 +20,7 @@ export const Genie = () => {
           <div className="col-md-6 mt-4 mt-md-0">
             <div className="icon-box" data-aos="fade-up" data-aos-delay="200">
               <i className="bi bi-card-checklist"></i>
-              <h4><a href="">SPARKL TBI</a></h4>
+              <h4><a href="https://sparkltbi.com">SPARKL TBI</a></h4>
               <p>StartUp Empowering Innovation and Entrepreneurship for Economic Growth and Technological Advancement </p>
             </div>
           </div>

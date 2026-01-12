@@ -62,7 +62,7 @@ export const Mentors = () => {
                             <div className="member-img">
                                 <img src="assets/images/jitendrasir.png" className="img-fluid" alt="" />
                                 <div className="social">
-                                <a href="" target="blank"><i className="bi bi-instagram"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i className="bi bi-instagram"></i></a>
                                 <a href="https://www.linkedin.com/in/jitendra-sharma-592747170" target="blank"><i className="bi bi-linkedin"></i></a>
                                 </div>
                             </div>

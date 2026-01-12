@@ -18,7 +18,7 @@ export const About = () => {
                                 aim to develop an Entrepreneurial Spirit among students and share a vision to foster innovation and
                                 budding ideas in youth.
                             </p>
-                            <a href="#" className="about-btn"><span>About us</span> <i className="bx bx-chevron-right"></i></a>
+                            <a href="/#about" className="about-btn"><span>About us</span> <i className="bx bx-chevron-right"></i></a>
                         </div>
                     </div>
                     <div className="col-xl-7 d-flex align-items-stretch">
