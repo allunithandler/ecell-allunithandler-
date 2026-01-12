@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { useEffect } from 'react';
@@ -9,7 +9,7 @@ export const Events = () => {
         document.body.style.backgroundImage = "url(assets/images/Workshops/WebsiteBG-01-01-01-01-01.jpg)";
         document.body.style.backgroundAttachment = "fixed";
         document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundPsition = "center";
+        document.body.style.backgroundPosition = "center";
         document.getElementById("header").style.top = "-100%"; 
         document.getElementById("footer").style.display = "none"; 
     }, [])
@@ -46,7 +46,7 @@ export const Events = () => {
 
                                     </div>
                                     <div className="member-info">
-                                        <a target="_blank" className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></a>
+                                        <button className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></button>
                                     </div>
 
 
@@ -61,7 +61,7 @@ export const Events = () => {
 
                                     </div>
                                     <div className="member-info">
-                                        <a href='https://forms.gle/jBs6UxZ67ShyYUNc8' target="_blank" className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></a>
+                                        <a href='https://forms.gle/jBs6UxZ67ShyYUNc8' target="_blank" rel="noreferrer" className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></a>
 
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@ export const Events = () => {
 
                                     </div>
                                     <div className="member-info">
-                                        <a href='https://forms.gle/k8yhN6HmLYe1hMA2A' target="_blank" className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></a>
+                                        <a href='https://forms.gle/k8yhN6HmLYe1hMA2A' target="_blank" rel="noreferrer" className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></a>
 
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@ export const Events = () => {
 
                                     </div>
                                     <div className="member-info">
-                                        <a href='https://forms.gle/e3AZxyYRCsVQ1HL29' target="_blank" className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></a>
+                                        <a href='https://forms.gle/e3AZxyYRCsVQ1HL29' target="_blank" rel="noreferrer" className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></a>
 
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@ export const Events = () => {
 
                                     </div>
                                     <div className="member-info">
-                                        <a href='https://forms.gle/njfjkHCWPwAFDWHN7' target="_blank" className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></a>
+                                        <a href='https://forms.gle/njfjkHCWPwAFDWHN7' target="_blank" rel="noreferrer" className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></a>
 
                                     </div>
                                 </div>
@@ -111,7 +111,7 @@ export const Events = () => {
 
                                     </div>
                                     <div className="member-info">
-                                        <a href='https://forms.gle/nVx2Eij7UTwxHMJi9' target="_blank" className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></a>
+                                        <a href='https://forms.gle/nVx2Eij7UTwxHMJi9' target="_blank" rel="noreferrer" className="get-started-btn scrollto ticket"><h6 style={{ fontWeight: "bolder", position: "relative", top: "5%", fontSize: "20px" }}>REGISTER</h6></a>
 
                                     </div>
                                 </div>
@@ -132,7 +132,7 @@ export const Events = () => {
 
 
 
-            <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
+            <button className="back-to-top d-flex align-items-center justify-content-center" onClick={() => window.scrollTo(0, 0)}><i className="bi bi-arrow-up-short"></i></button>
 
         </>
     )

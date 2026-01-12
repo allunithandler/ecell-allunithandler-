@@ -36,24 +36,24 @@ export const Tabs = () => {
 
                 <ul className="nav nav-tabs row d-flex">
                     <li className="nav-item col-3">
-                        <a className="nav-link active show" data-bs-toggle="tab" data-bs-target="tab-1">
+                        <button className="nav-link active show" data-bs-toggle="tab" data-bs-target="tab-1" type="button">
                             <h4 className="d-lg-block">Members</h4>
-                        </a>
+                        </button>
                     </li>
                     <li className="nav-item col-3">
-                        <a className="nav-link" data-bs-toggle="tab" data-bs-target="tab-2">
+                        <button className="nav-link" data-bs-toggle="tab" data-bs-target="tab-2" type="button">
                             <h4 className="d-lg-block">Events</h4>
-                        </a>
+                        </button>
                     </li>
                     <li className="nav-item col-3">
-                        <a className="nav-link" data-bs-toggle="tab" data-bs-target="tab-3">
+                        <button className="nav-link" data-bs-toggle="tab" data-bs-target="tab-3" type="button">
                             <h4 className="d-lg-block">Talks</h4>
-                        </a>
+                        </button>
                     </li>
                     <li className="nav-item col-3">
-                        <a className="nav-link" data-bs-toggle="tab" data-bs-target="tab-4">
+                        <button className="nav-link" data-bs-toggle="tab" data-bs-target="tab-4" type="button">
                             <h4 className="d-lg-block" >StartUps</h4>
-                        </a>
+                        </button>
                     </li>
                 </ul>
 
